@@ -17,50 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-ap-NeO">
-                                <rect key="frame" x="175" y="126" width="25" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zpS-4x-qgr">
+                                <rect key="frame" x="56" y="60" width="263" height="567"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-ap-NeO">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="189"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-Gk-Ctl">
+                                        <rect key="frame" x="0.0" y="189" width="263" height="189"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1el-dY-lel">
+                                        <rect key="frame" x="0.0" y="378" width="263" height="189"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0F-eW-3Qa">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="189"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67p-Yd-1tB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-ga-fnK">
+                                                <rect key="frame" x="132" y="0.0" width="131" height="189"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXR-N1-p6x"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0F-eW-3Qa">
-                                <rect key="frame" x="96" y="349" width="40" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="-"/>
-                                <connections>
-                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67p-Yd-1tB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-ga-fnK">
-                                <rect key="frame" x="249" y="349" width="30" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXR-N1-p6x"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-Gk-Ctl">
-                                <rect key="frame" x="182" y="239" width="11" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uhT-ga-fnK" firstAttribute="leading" secondItem="i0F-eW-3Qa" secondAttribute="trailing" constant="113" id="3px-wn-Z7d"/>
-                            <constraint firstItem="5bf-ap-NeO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="106" id="AVX-BE-yBu"/>
-                            <constraint firstItem="i0F-eW-3Qa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="CRP-MO-rBV"/>
-                            <constraint firstItem="5bf-ap-NeO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNJ-sF-dIZ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uhT-ga-fnK" secondAttribute="bottom" constant="288" id="JrG-aT-XUu"/>
-                            <constraint firstItem="uhT-ga-fnK" firstAttribute="centerY" secondItem="i0F-eW-3Qa" secondAttribute="centerY" id="R4u-ot-cMO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uhT-ga-fnK" secondAttribute="trailing" constant="80" id="ZV8-yR-qY2"/>
-                            <constraint firstItem="wxI-Gk-Ctl" firstAttribute="top" secondItem="5bf-ap-NeO" secondAttribute="bottom" constant="83" id="eWs-tq-yrJ"/>
-                            <constraint firstItem="wxI-Gk-Ctl" firstAttribute="centerX" secondItem="5bf-ap-NeO" secondAttribute="centerX" id="fyH-Ea-7o9"/>
+                            <constraint firstItem="zpS-4x-qgr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="l4M-9a-6TS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zpS-4x-qgr" secondAttribute="bottom" constant="40" id="nYd-GM-7nt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zpS-4x-qgr" secondAttribute="trailing" constant="40" id="xkb-z1-ZYd"/>
+                            <constraint firstItem="zpS-4x-qgr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="xtc-Dz-7Ye"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
