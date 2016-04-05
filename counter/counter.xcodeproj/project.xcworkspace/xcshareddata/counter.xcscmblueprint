@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "08F408B7FE35B7BEC431529FE2E6536F9A5A415A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "08F408B7FE35B7BEC431529FE2E6536F9A5A415A" : 0,
+    "A210AB046BE5EF1635E112E37790AC9769899A1D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3607068F-FCE0-4FD3-ACBD-03C990A7AD30",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "08F408B7FE35B7BEC431529FE2E6536F9A5A415A" : "counterNithiYuchi\/",
+    "A210AB046BE5EF1635E112E37790AC9769899A1D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "counter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "counter\/counter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yuchima\/counterNithiYuchi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "08F408B7FE35B7BEC431529FE2E6536F9A5A415A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nithi-p\/DM-GY-9103-SP16-CourseWork.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A210AB046BE5EF1635E112E37790AC9769899A1D"
+    }
+  ]
+}

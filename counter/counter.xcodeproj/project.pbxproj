@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CCB2CC1CB483A7004F2BE9 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCB2CB1CB483A7004F2BE9 /* CounterViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		91AF5A501CB4820200283E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF5A4F1CB4820200283E55 /* AppDelegate.swift */; };
 		91AF5A521CB4820200283E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF5A511CB4820200283E55 /* ViewController.swift */; };
 		91AF5A551CB4820200283E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91AF5A531CB4820200283E55 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43CCB2CB1CB483A7004F2BE9 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		91AF5A4C1CB4820200283E55 /* counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91AF5A4F1CB4820200283E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91AF5A511CB4820200283E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				91AF5A4F1CB4820200283E55 /* AppDelegate.swift */,
 				91AF5A511CB4820200283E55 /* ViewController.swift */,
+				43CCB2CB1CB483A7004F2BE9 /* CounterViewController.swift */,
 				91AF5A531CB4820200283E55 /* Main.storyboard */,
 				91AF5A561CB4820200283E55 /* Assets.xcassets */,
 				91AF5A581CB4820200283E55 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CCB2CC1CB483A7004F2BE9 /* CounterViewController.swift in Sources */,
 				91AF5A521CB4820200283E55 /* ViewController.swift in Sources */,
 				91AF5A501CB4820200283E55 /* AppDelegate.swift in Sources */,
 			);
@@ -251,6 +255,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuchima.com.counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,6 +267,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuchima.com.counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -284,6 +290,7 @@
 				91AF5A601CB4820200283E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
