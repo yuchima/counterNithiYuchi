@@ -12,25 +12,41 @@ import UIKit
 class CounterViewController: UIViewController {
 	
 	var count = 0
+	var item: Item!
+	var itemStore:ItemStore!
 	
+	
+
 	
 	
 	@IBOutlet var name: UITextField!
 	@IBOutlet var counterLabel: UILabel!
 	
 	@IBAction func minus(sender: AnyObject) {
-		if count >= 1 {
-			count = count - 1
+		if item.count >= 1 {
+			item.count = item.count - 1
 		}
-		counterLabel.text = String(count)
+		counterLabel.text = String(item.count)
 	}
 	
 	@IBAction func plus(sender: AnyObject) {
-		count = count + 1
-		print(count)
-		counterLabel.text = String(count)
+		item.count = item.count + 1
+		counterLabel.text = String(item.count)
 	}
 	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		name.text = item.name
+		counterLabel.text = String(item.count)
+	}
+	
+	override func viewWillDisappear(animated: Bool) {
+		super.viewWillDisappear(animated)
+		item.name = name.text ?? "Untitled"
+	}
+	
+	
+		
 	
 	
 	

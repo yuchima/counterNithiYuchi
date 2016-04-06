@@ -42,13 +42,24 @@ class CounterListViewController: UITableViewController {
 		return itemStore.allItems.count
 	}
 	
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if segue.identifier == "ShowItem" {
+			if let row = tableView.indexPathForSelectedRow?.row {
+				let item = itemStore.allItems[row]
+				let counterViewController = segue.destinationViewController as! CounterViewController
+				counterViewController.item = item
+			}
+		}
+	}
+	
 
 	
 	
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		itemStore.createItem()
+		//itemStore.createItem()
 		tableView.reloadData()
 	}
 	
