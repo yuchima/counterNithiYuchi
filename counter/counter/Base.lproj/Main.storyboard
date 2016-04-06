@@ -20,16 +20,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zpS-4x-qgr">
                                 <rect key="frame" x="56" y="60" width="263" height="567"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-ap-NeO">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-ap-NeO">
                                         <rect key="frame" x="0.0" y="0.0" width="263" height="189"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-Gk-Ctl">
                                         <rect key="frame" x="0.0" y="189" width="263" height="189"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -39,7 +39,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0F-eW-3Qa">
                                                 <rect key="frame" x="0.0" y="0.0" width="132" height="189"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
                                                     <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67p-Yd-1tB"/>
@@ -48,7 +48,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-ga-fnK">
                                                 <rect key="frame" x="132" y="0.0" width="131" height="189"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
                                                     <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXR-N1-p6x"/>

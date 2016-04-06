@@ -11,20 +11,27 @@ import UIKit
 
 class CounterViewController: UIViewController {
 	
-
-	@IBOutlet var counterName: UITextField!
-
+	var count = 0
+	
+	
+	
+	@IBOutlet var name: UITextField!
 	@IBOutlet var counterLabel: UILabel!
 	
-	
 	@IBAction func minus(sender: AnyObject) {
-		print("minus")
+		if count >= 1 {
+			count = count - 1
+		}
+		counterLabel.text = String(count)
 	}
-	
 	
 	@IBAction func plus(sender: AnyObject) {
-		print("plus")
+		count = count + 1
+		print(count)
+		counterLabel.text = String(count)
 	}
+	
+	
 	
 	
 }
