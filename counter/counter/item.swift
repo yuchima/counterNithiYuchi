@@ -10,8 +10,8 @@ import UIKit
 
 class Item : NSObject {
 	
-	var name = "untitled"
-	var count = 0
+	var name : String
+	var count : Int
 	
 	
 	

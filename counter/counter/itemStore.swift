@@ -14,6 +14,7 @@ class ItemStore {
 	
 	func createItem() -> Item {
 		let newItem = Item(name: "Untitled", count: 0)
+		
 		allItems.append(newItem)
 		return newItem
 		

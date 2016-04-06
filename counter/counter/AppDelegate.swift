@@ -12,11 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+	let itemStore = ItemStore()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+		
+		let navController = window!.rootViewController as! UINavigationController
+		let listController = navController.topViewController as! CounterListViewController
+		
+		listController.itemStore = itemStore
+		
+		return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
